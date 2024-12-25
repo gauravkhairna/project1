@@ -1,0 +1,39 @@
+package basic_programe;
+
+import javax.xml.xpath.XPath;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ById;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class firstprogram {
+	
+	public static  void main(String[] args) throws InterruptedException {
+		
+
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://is.rediff.com/signup/register");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);       
+		  
+	
+
+	
+		WebElement inpit1 = driver.findElement(By.xpath("//input[@name='fullname']"));
+		System.out.println(inpit1);
+		 
+
+		// driver.findElement(By.xpath( " //input[@id='sex']"    )).sendKeys("a");
+// driver.findElement(By.xpath( "//input[@value='Sign up']")).click(); 
+		
+	
+		//.sendKeys("abc");;
+//input[@id='password']
+		////input[@name='name68e61ebb']
+//input[@value="Sign up"]
+		
+}
+
+}
